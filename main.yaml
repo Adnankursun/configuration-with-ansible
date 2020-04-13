@@ -4,9 +4,9 @@
   become: yes
   become_method: sudo
   tasks:
-    -name: Install Mariadb
-     shell: "sudo yum install mariadb-server -y"
-     state: started
+    - name: Install Mariadb
+      shell: "sudo yum install mariadb-server -y"
+      state: started
   tasks:
     - name: Install necessary packages
       package:
